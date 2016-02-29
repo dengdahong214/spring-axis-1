@@ -21,7 +21,8 @@ public class AxisConfig {
     
     @Bean
     public ServletRegistrationBean axisServletRegistrationBean() {
-        ServletRegistrationBean servletBean = new ServletRegistrationBean(new AxisServlet(), "/axis", "/axis-secured");
+        AxisServlet servlet = new AxisServlet();
+        ServletRegistrationBean servletBean = new ServletRegistrationBean(servlet, "/axis/*", "/axis-secured/*");
         return servletBean;
     }
     
