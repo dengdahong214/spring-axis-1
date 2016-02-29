@@ -23,7 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
             .authorizeRequests()
                 .antMatchers("/").permitAll()
-                .antMatchers("/axis-secured").authenticated()
+                .antMatchers("/axis-secured/**").authenticated()
         ;
     }
 
