@@ -17,7 +17,7 @@ public class Application {
     public static void main(String[] params) {
         try {
             String endpoint =
-                "http://localhost:8080/";
+                "http://localhost:8080/axis";
 
             Service  service = new Service();
             Call     call    = (Call) service.createCall();
