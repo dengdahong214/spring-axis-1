@@ -1,15 +1,13 @@
 package local.spring.axis.test.integration
 
 import local.spring.axis.test.utils.SpringAxisIntegrationSpecification
-import org.junit.Ignore
-import org.junit.Test
 
 import static org.hamcrest.Matchers.equalToIgnoringCase
 
 /**
  * Created by plks on 2016-03-02.
  */
-class ServiceDeployedOnStatupSpec extends SpringAxisIntegrationSpecification {
+class ServiceDeployedOnStartupSpec extends SpringAxisIntegrationSpecification {
 
     def "calling someMethod on service deployed on startup should return correct response"() {
         given:
