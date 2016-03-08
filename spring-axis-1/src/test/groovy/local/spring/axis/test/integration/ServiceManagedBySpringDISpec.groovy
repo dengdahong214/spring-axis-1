@@ -1,7 +1,6 @@
 package local.spring.axis.test.integration
 
 import local.spring.axis.test.utils.SpringAxisIntegrationSpecification
-import org.junit.Test
 
 import static org.hamcrest.Matchers.equalToIgnoringCase
 
@@ -10,7 +9,6 @@ import static org.hamcrest.Matchers.equalToIgnoringCase
  */
 class ServiceManagedBySpringDISpec extends SpringAxisIntegrationSpecification {
 
-    @Test
     def "calling helloWorld method of service-managed-by-spring-di service should return hello world"() {
         given:
         def call = createCallToAxis("/axis");

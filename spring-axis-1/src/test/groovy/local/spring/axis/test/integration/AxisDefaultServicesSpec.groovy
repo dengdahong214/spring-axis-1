@@ -3,9 +3,7 @@ package local.spring.axis.test.integration
 import local.spring.axis.test.utils.SpringAxisIntegrationSpecification
 import org.apache.axis.client.AdminClient
 import org.apache.axis.client.Call
-import org.apache.axis.client.Service
 import org.apache.http.client.fluent.Request
-import org.junit.Test
 import org.springframework.core.io.ClassPathResource
 import org.springframework.http.MediaType
 
@@ -17,7 +15,6 @@ import static spock.util.matcher.HamcrestSupport.expect
  */
 class AxisDefaultServicesSpec extends SpringAxisIntegrationSpecification {
 
-    @Test
     def "getVersion remote call should return apache axis current version"() {
         setup:
         Call call = createCallToAxis("/axis");
@@ -30,7 +27,6 @@ class AxisDefaultServicesSpec extends SpringAxisIntegrationSpecification {
         result equalToIgnoringCase(org.apache.axis.Version.getVersion());
     }
 
-    @Test
     def "download wsdl for Version service"() {
         when:
         def response = Request.Get(uriBuilder().setPath("/axis/Version").addParameter("wsdl", "").toString())
@@ -41,7 +37,6 @@ class AxisDefaultServicesSpec extends SpringAxisIntegrationSpecification {
         response.getFirstHeader("Content-Type").getValue().startsWith(MediaType.TEXT_XML_VALUE);
     }
 
-    @Test
     def "there should be possibility to deploy wsdd file"() {
         setup:
         ClassPathResource deploymentDescription = new ClassPathResource("hello_world_spring_rpc.wsdd");
@@ -56,7 +51,6 @@ class AxisDefaultServicesSpec extends SpringAxisIntegrationSpecification {
         expect result, equalToIgnoringCase("<Admin>Done processing</Admin>");
     }
 
-    @Test
     def "undeploying non existing service"() {
         setup:
         AdminClient client = new AdminClient(true);

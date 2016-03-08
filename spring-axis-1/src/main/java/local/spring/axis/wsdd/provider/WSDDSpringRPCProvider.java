@@ -1,6 +1,5 @@
 package local.spring.axis.wsdd.provider;
 
-import javax.xml.namespace.QName;
 import local.spring.axis.provider.SpringRPCProvider;
 import org.apache.axis.EngineConfiguration;
 import org.apache.axis.Handler;
@@ -13,6 +12,8 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
+
+import javax.xml.namespace.QName;
 
 /**
  *
