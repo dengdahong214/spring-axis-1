@@ -1,4 +1,4 @@
-package local.spring.axis.service;
+package local.service;
 
 import org.springframework.stereotype.Service;
 

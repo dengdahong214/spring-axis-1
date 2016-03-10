@@ -1,6 +1,6 @@
 package local.spring.axis.test.utils
 
-import local.spring.axis.WebApplication
+import local.WebApplication
 import org.apache.axis.client.Call
 import org.apache.axis.client.Service
 import org.apache.http.client.utils.URIBuilder

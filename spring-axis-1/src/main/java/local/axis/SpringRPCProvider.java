@@ -1,4 +1,4 @@
-package local.spring.axis.provider;
+package local.axis;
 
 import org.apache.axis.*;
 import org.apache.axis.description.OperationDesc;

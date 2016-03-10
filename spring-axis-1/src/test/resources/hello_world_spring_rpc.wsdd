@@ -10,7 +10,7 @@
     xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
 
   <service name="hello-world" provider="java:SpringRPC">
-    <parameter name="className" value="local.spring.axis.service.HelloWorldService"/>
+    <parameter name="className" value="local.service.HelloWorldService"/>
     <parameter name="allowedMethods" value="*"/>
   </service>
 

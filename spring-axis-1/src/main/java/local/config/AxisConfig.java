@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package local.spring.axis.config;
+package local.config;
 
 import org.apache.axis.transport.http.AdminServlet;
 import org.apache.axis.transport.http.AxisServlet;

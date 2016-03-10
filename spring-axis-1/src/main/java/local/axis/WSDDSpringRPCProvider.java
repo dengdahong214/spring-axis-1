@@ -1,6 +1,6 @@
-package local.spring.axis.wsdd.provider;
+package local.axis;
 
-import local.spring.axis.provider.SpringRPCProvider;
+import local.axis.SpringRPCProvider;
 import org.apache.axis.EngineConfiguration;
 import org.apache.axis.Handler;
 import org.apache.axis.deployment.wsdd.WSDDConstants;
