@@ -16,7 +16,9 @@ WebApplication.java
 
 # Spring integration
 
-New Apache Axis provider was created in order to provide Spring DI integration. Implementation of this provider is defined by [SpringRPCProvider](spring-axis-1/src/main/java/local/spring/axis/provider/SpringRPCProvider.java) class.
+New Apache Axis provider was created in order to provide Spring DI integration. Implementation of this provider is defined by [SpringRPCProvider](spring-axis-1/src/main/java/local/axis/SpringRPCProvider.java) class.
+
+Before the new provider can be used it needs to be registered in Axis. This is done by [WSDDSpringRPCProvider](spring-axis-1/src/main/java/local/axis/WSDDSpringRPCProvider.java) class when Spring application context emits ContextRefreshedEvent.
 
 In order to configure service so that it utilize `SpringRPCProvider` you need following xml in your wsdd file:
 ```
