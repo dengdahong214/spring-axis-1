@@ -37,7 +37,7 @@ If you want to lookup service instance by qualifier you may use following config
 </service>
 ```
 
-In case of executable jar packages with embedded tomcat there was an issue that Axis couldn't load server-wsdd.xml config file. In order to fix this new implementation of [EngineConfigurationFactory](https://github.com/pawelkorus/spring-axis-1/blob/master/spring-axis-1/src/main/java/local/axis/EngineConfigurationFactory.java) was introduced which additionally uses class loader to load resources from class path.
+In case of executable jar packages with embedded tomcat there was an issue: Axis couldn't load server-wsdd.xml config file from jar. In order to fix this new implementation of [EngineConfigurationFactory](https://github.com/pawelkorus/spring-axis-1/blob/master/spring-axis-1/src/main/java/local/axis/EngineConfigurationFactory.java) was introduced which additionally uses class loader to load resources from class path.
 
 # Interacting with server
 
