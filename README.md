@@ -1,6 +1,6 @@
 # Spring Axis 1
 
-Hello world example of Axis 1 ( Axis1 ) setup on Spring Boot.
+Hello world example of Axis 1 ( Axis1 ) setup on Spring Boot 1.3.
 
 # Usage
 ```
