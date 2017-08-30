@@ -10,9 +10,6 @@ import org.springframework.http.MediaType
 import static org.hamcrest.Matchers.equalToIgnoringCase
 import static spock.util.matcher.HamcrestSupport.expect
 
-/**
- * Created by plks on 2016-02-25.
- */
 class AxisDefaultServicesSpec extends SpringAxisIntegrationSpecification {
 
     def "getVersion remote call should return apache axis current version"() {

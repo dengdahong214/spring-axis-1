@@ -6,9 +6,6 @@ import org.apache.http.client.fluent.Request
 import static org.hamcrest.Matchers.equalToIgnoringCase
 import static spock.util.matcher.HamcrestSupport.expect
 
-/**
- * Created by plks on 2016-02-25.
- */
 class SpringControllersSpec extends SpringAxisIntegrationSpecification {
 
     def "request to hello-world should return 'hello world from spring controller'"() {

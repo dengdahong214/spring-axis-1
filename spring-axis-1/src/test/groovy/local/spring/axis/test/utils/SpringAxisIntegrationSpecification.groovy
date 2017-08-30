@@ -4,20 +4,14 @@ import local.WebApplication
 import org.apache.axis.client.Call
 import org.apache.axis.client.Service
 import org.apache.http.client.utils.URIBuilder
-import org.springframework.beans.factory.annotation.Value
-import org.springframework.boot.test.SpringApplicationConfiguration
-import org.springframework.boot.test.WebIntegrationTest
+import org.springframework.boot.context.embedded.LocalServerPort
+import org.springframework.boot.test.context.SpringBootTest
 import spock.lang.Specification
 
-/**
- * Created by plks on 2016-02-25.
- */
-@SpringApplicationConfiguration(classes=[
-        WebApplication.class
-])
-@WebIntegrationTest("server.port=0")
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
+    classes = WebApplication)
 abstract class SpringAxisIntegrationSpecification extends Specification {
-    @Value('${local.server.port}')
+    @LocalServerPort
     int port;
 
     def uriBuilder() {

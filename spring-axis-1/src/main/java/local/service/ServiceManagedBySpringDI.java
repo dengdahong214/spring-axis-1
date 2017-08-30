@@ -9,8 +9,6 @@ import org.springframework.stereotype.Service;
  * When configuring deployment file for such services you have to use java:SpringRPC
  * provider. For reference you may check configuration of service-managed-by-spring-di
  * service in service-config.wsdd file.
- *
- * Created by plks on 2016-03-04.
  */
 @Service
 public class ServiceManagedBySpringDI {

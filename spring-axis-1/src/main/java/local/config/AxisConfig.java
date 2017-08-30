@@ -8,14 +8,10 @@ package local.config;
 import org.apache.axis.EngineConfigurationFactory;
 import org.apache.axis.transport.http.AdminServlet;
 import org.apache.axis.transport.http.AxisServlet;
-import org.springframework.boot.context.embedded.ServletRegistrationBean;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- *
- * @author plks
- */
 @Configuration
 public class AxisConfig {
     

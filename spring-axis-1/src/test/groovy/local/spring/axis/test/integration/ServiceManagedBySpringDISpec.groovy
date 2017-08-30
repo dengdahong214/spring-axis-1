@@ -4,9 +4,6 @@ import local.spring.axis.test.utils.SpringAxisIntegrationSpecification
 
 import static org.hamcrest.Matchers.equalToIgnoringCase
 
-/**
- * Created by plks on 2016-03-04.
- */
 class ServiceManagedBySpringDISpec extends SpringAxisIntegrationSpecification {
 
     def "calling helloWorld method of service-managed-by-spring-di service should return hello world"() {

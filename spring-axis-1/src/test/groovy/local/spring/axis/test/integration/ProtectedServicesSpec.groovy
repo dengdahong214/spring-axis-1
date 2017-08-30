@@ -8,9 +8,6 @@ import static org.hamcrest.Matchers.equalToIgnoringCase
 import static org.hamcrest.Matchers.startsWith
 import static spock.util.matcher.HamcrestSupport.expect
 
-/**
- * Created by plks on 2016-02-29.
- */
 class ProtectedServicesSpec extends SpringAxisIntegrationSpecification {
 
     def "accessing axis service protected with http basic auth should give 401"() {

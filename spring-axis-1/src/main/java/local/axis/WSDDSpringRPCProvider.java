@@ -1,6 +1,5 @@
 package local.axis;
 
-import local.axis.SpringRPCProvider;
 import org.apache.axis.EngineConfiguration;
 import org.apache.axis.Handler;
 import org.apache.axis.deployment.wsdd.WSDDConstants;
@@ -15,10 +14,6 @@ import org.springframework.stereotype.Component;
 
 import javax.xml.namespace.QName;
 
-/**
- *
- * @author plks
- */
 @Component
 public class WSDDSpringRPCProvider extends WSDDProvider 
     implements ApplicationListener<ContextRefreshedEvent>, ApplicationContextAware {

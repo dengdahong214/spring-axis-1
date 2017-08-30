@@ -14,10 +14,6 @@ import javax.xml.soap.SOAPException;
 import javax.xml.soap.SOAPMessage;
 import java.util.Optional;
 
-/**
- *
- * @author plks
- */
 public class SpringRPCProvider extends BasicProvider {
 
     private final RPCProvider rpcProvider;

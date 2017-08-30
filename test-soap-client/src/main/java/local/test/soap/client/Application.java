@@ -5,14 +5,9 @@
  */
 package local.test.soap.client;
 
-import javax.xml.namespace.QName;
 import org.apache.axis.client.Call;
 import org.apache.axis.client.Service;
 
-/**
- *
- * @author plks
- */
 public class Application {
     public static void main(String[] params) {
         try {
@@ -23,10 +18,8 @@ public class Application {
             Call     call    = (Call) service.createCall();
 
             call.setTargetEndpointAddress( new java.net.URL(endpoint) );
-            //call.setOperationName("getVersion");
 
-            //String ret = (String) call.invoke( new Object[] { "Hello!" } );
-            String ret = (String) call.invoke("hello-world", "helloWorld", null);
+            String ret = (String) call.invoke("service-managed-by-spring-di", "helloWorld", null);
 
             System.out.println("Got '" + ret + "'");
         } catch (Exception e) {

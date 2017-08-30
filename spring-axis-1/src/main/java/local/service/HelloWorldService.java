@@ -2,10 +2,6 @@ package local.service;
 
 import org.springframework.stereotype.Service;
 
-/**
- *
- * @author plks
- */
 @Service
 public class HelloWorldService {
 

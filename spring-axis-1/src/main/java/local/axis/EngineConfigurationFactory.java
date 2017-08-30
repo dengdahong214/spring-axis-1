@@ -13,12 +13,7 @@ import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import java.io.File;
 import java.io.InputStream;
-import java.net.URL;
-import java.util.Enumeration;
 
-/**
- * Created by plks on 2016-03-10.
- */
 public class EngineConfigurationFactory extends EngineConfigurationFactoryDefault {
 
     private ServletConfig cfg;

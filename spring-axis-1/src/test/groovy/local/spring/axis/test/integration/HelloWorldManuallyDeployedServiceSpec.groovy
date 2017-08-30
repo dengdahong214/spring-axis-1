@@ -9,9 +9,6 @@ import org.springframework.http.MediaType
 
 import static org.hamcrest.Matchers.equalToIgnoringCase
 
-/**
- * Created by plks on 2016-02-25.
- */
 class HelloWorldManuallyDeployedServiceSpec
         extends SpringAxisIntegrationSpecification {
 
