@@ -1,6 +1,8 @@
 # Spring Axis 1
 
-Hello world example of Axis 1 ( Axis1 ) setup on Spring Boot 1.5.x.
+Hello world demo of Axis 1 ( Axis1 ) setup on Spring Boot 1.5.x.
+
+See [tag spring_1.3.x](https://github.com/pawelkorus/spring-axis-1/tree/spring_1.3.x) for integration with Spring Boot 1.3.x
 
 # Usage
 ```
